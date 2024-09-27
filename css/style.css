@@ -842,8 +842,6 @@ hr {
 }
 .logo-img {
     margin-bottom: 0px;
-    width: 100% !important;
-    height: 3.5rem !important;
 }
 .nav-scroll .logo-wrapper .logo h2 {
     display: block;
@@ -5077,8 +5075,8 @@ height: 100% !important;
     width: 10rem !important;
 }
 .footer-logo{
-    height: 5rem !important;
-    width: 10rem !important;
+    height: 2rem !important;
+    width: 8rem !important;
 }
 .footer .top .item .language select option {
      color: rgba(255,255,255,0.7);
