@@ -43,9 +43,11 @@ $(function () {
     });
     
     // Preloader
-    $("#preloader").fadeOut(500);
-    $(".preloader-bg").delay(500).fadeOut(500);
-    var wind = $(window);
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.querySelector('.sanin-loader').style.display = 'none';
+        }, 3000); // Loader will disappear after 3 seconds
+      });
     
     // Navbar scrolling background
     wind.on("scroll", function () {
