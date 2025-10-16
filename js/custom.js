@@ -449,3 +449,22 @@ $(function () {
     })
     
 });
+const counters = document.querySelectorAll('.count');
+  const speed = 200; // lower = faster
+
+  counters.forEach(counter => {
+    const animate = () => {
+      const value = +counter.getAttribute('data-target');
+      const data = +counter.innerText;
+      const increment = value / speed;
+
+      if (data < value) {
+        counter.innerText = Math.ceil(data + increment);
+        setTimeout(animate, 20);
+      } else {
+        // Separate the number and + sign for styling
+        counter.innerHTML = `${value}<span class="plus">+</span>`;
+      }
+    };
+    animate();
+  });

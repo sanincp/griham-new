@@ -529,36 +529,20 @@ hr {
     z-index: 9999;
   }
   
-  .sanin-loading-circle {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 5px solid #cccccc;
-    border-top: 5px solid#b28836;
-    border-radius: 50%;
-    animation: spin-circle 2s linear infinite;
-  }
+
   
   .sanin-logo {
-    width: 80px;
+    width: 400px;
     animation: breathing 2s ease-in-out infinite;
   }
   
-  @keyframes spin-circle {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
   
   @keyframes breathing {
     0% {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+      transform: scale(.97);
     }
     100% {
       transform: scale(1);
@@ -5466,3 +5450,28 @@ select {
 .same-height-1{
     height: 210px;
 }
+.hover-black{
+    filter: grayscale(100%);
+}
+.hover-black:hover{
+    filter: grayscale(0%);
+}
+.counter-item {
+    color: #fff;
+    padding: 20px;
+  }
+  .counter-item .count {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .counter-item p{
+    font-size: 27px;
+    color: #b28836;
+    font-family: "Oswald", sans-serif;
+  }
+  .counter-item .plus {
+    color: #b28836;
+    font-weight: 700;
+    padding-left: 10px;
+  }
