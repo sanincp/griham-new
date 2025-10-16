@@ -5463,3 +5463,6 @@ select {
 [data-overlay-dark="10"]:before {
     opacity: 1;
 }
+.same-height-1{
+    height: 210px;
+}
